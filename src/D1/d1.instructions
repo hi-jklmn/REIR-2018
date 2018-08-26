@@ -1,0 +1,24 @@
+In this assignment, we practice running experiments of programs. We will be examining the
+efficiency of the QuickFind method.
+
+1. Create a new data type TestingUF, with variables mean and stddev.
+2. Write a method public double tester(int n) that performs n
+QuickFind.union operations on an initially empty UF instance with n elements. The
+elements (on which the union is applied) should be selected at random; repetitions are alright.
+This should be timed using the Stopwatch class, and the method returns the elapsed time.
+
+3. Add a function void repeatExperiment(int n, int k) that performs the
+following: Perform k runs of tester(), compute the standard deviation and the mean of the time
+spent, and store these in the respective instance variables.
+
+4. Write a main function that runs the above function for n=1000, 2000, 4000, 8000, with k set
+to something reasonable (like 20). Print out the value of n, the mean, and the standard
+deviation.
+
+5. Import these values (the n‘s and means) into Excel, form a scatter plot. Add a trendline (of
+type Power) with the equation displayed on the chart. Print the chart as PDF. What does the
+equation tell you about the complexity of the QuickFind data structure? (For you to think
+about.)
+
+Hand in to Canvas: The Java file and the chart (in PDF format) as separate files (not zipped).
+Deadline: Sunday 26 August midnight. No late submissions accepted.
